@@ -80,27 +80,24 @@
 
 • Ollama (用于本地部署Qwen3)
 
-后端部署
+# 后端部署
 
 # 1. 克隆仓库
 git clone https://github.com/your-username/AI-LMS-Teach.git
 
 cd ai-teaching-agent/ai_ims_backend
 
-# 2. 安装依赖
-pip install -r requirements.txt
-
-# 3. 配置数据库
+# 2. 配置数据库
 修改 backend/settings.py 中的 DATABASES 配置
 
-# 4. 启动Django服务
+# 3. 启动Django服务
 python manage.py runserver
 
 
-前端部署
+# 前端部署
 
 # 1. 进入前端目录
-cd ../ai_ims_backend
+cd ../ai-web
 
 # 2. 安装依赖
 npm install
@@ -109,7 +106,7 @@ npm install
 npm run dev
 
 
-知识图谱构建
+# 知识图谱构建
 
 • 将《C语言程序设计》教材文本放入指定目录。
 
@@ -118,7 +115,7 @@ npm run dev
 
 📂 项目结构说明
 .
-├── ai_ims_backend/                # Django后端项目
+├── ai_ims_backend/         # Django后端项目
 │   ├── authentication/     # 用户认证模块
 │   ├── chat/               # 知识问答模块
 │   ├── experts/            # 多功能专家智能体 (教案/代码/出题)
@@ -128,7 +125,7 @@ npm run dev
 │   ├── rag_service/        # RAG+KG核心推理服务
 │   ├── utils/              # 通用工具类
 │   └── core/               # 核心配置
-├── Ai-Web/               # Vue3前端项目
+├── Ai-Web/                 # Vue3前端项目
 │   ├── src/views/          # 页面组件
 │   └── src/components/     # 公共组件
 ├── docs/                   # 文档与图片资源
