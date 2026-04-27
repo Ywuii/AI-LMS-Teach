@@ -65,20 +65,6 @@
 
 • HTTP客户端：Axios
 
-系统架构图
-
-
-┌─────────────┐      ┌─────────────┐       ┌──────────────────────────┐
-│ 前端(Vue3)  │ ---->│后端 (Django) │ --->  │      RAG Service         │
-│Element Plus │      │RESTful API  │       │ ┌──────────────────────┐ │
-└─────────────┘      └─────────────┘       │ │   LLM (Qwen3/Ollama) │ │
-                                           │ ├──────────────────────┤ │
-                                           │ │   Vector DB (Chroma) │ │
-                                           │ ├──────────────────────┤ │
-                                           │ │   Graph DB (Neo4j)   │ │
-                                           │ └──────────────────────┘ │
-                                           └──────────────────────────┘
-
 
 🚀 快速开始
 
@@ -98,13 +84,14 @@
 
 # 1. 克隆仓库
 git clone https://github.com/your-username/AI-LMS-Teach.git
+
 cd ai-teaching-agent/ai_ims_backend
 
 # 2. 安装依赖
 pip install -r requirements.txt
 
 # 3. 配置数据库
-# 修改 backend/settings.py 中的 DATABASES 配置
+修改 backend/settings.py 中的 DATABASES 配置
 
 # 4. 启动Django服务
 python manage.py runserver
