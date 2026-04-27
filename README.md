@@ -35,6 +35,12 @@
 
 • 温和指导：以助教视角提供改进建议，而非单纯判题，注重教学引导。
 
+# 部分图片示例
+![智能体选择界面](./docs/imgs/agents.png)
+![知识问答](./docs/imgs/chat.png)
+![代码评测](./docs/imgs/code-review.png)
+![教案生成](./docs/imgs/teach-plan.png)
+
 🛠️ 技术架构
 
 本项目采用前后端分离架构，结合本地化大模型部署，确保数据安全与响应速度。
