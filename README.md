@@ -114,11 +114,12 @@ npm run dev
 
 
 📂 项目结构说明
+```text
 .
 ├── ai_ims_backend/         # Django后端项目
 │   ├── authentication/     # 用户认证模块
 │   ├── chat/               # 知识问答模块
-│   ├── experts/            # 多功能专家智能体 (教案/代码/出题)
+│   ├── experts/            # 多功能专家智能体
 │   │   ├── agents/         # 各智能体实现
 │   │   ├── prompts/        # 提示词工程
 │   │   └── schemas/        # 输出结构约束
@@ -130,6 +131,7 @@ npm run dev
 │   └── src/components/     # 公共组件
 ├── docs/                   # 文档与图片资源
 └── README.md
+```
 
 
 🙏 致谢
